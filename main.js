@@ -31,6 +31,14 @@ const newImage = document.querySelector("#new")
 newImage.src = "https://pbs.twimg.com/profile_images/963453873812893696/wRf1-zn-_400x400.jpg"
 newImage.style.height = "300px";
 
-const list = document.querySelector("ul")
-let textnode = document.createTextNode("Won't get fooled again.");
-list.appendChild(.item(textnode))
+let node = document.createElement("LI");                 
+// Create a <li> node
+let textnode = document.createTextNode("Won't get fooled again.");         
+// Create a text node
+node.appendChild(textnode);                              // Append the text to <li>
+document.querySelector('ul').appendChild(node)
+
+
+
+
+
